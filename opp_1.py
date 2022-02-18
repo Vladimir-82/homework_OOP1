@@ -50,5 +50,7 @@ obj = SomeClass('spam')
 method = obj.is_type()
 if method == str:
     print(obj.method_str())
-if method == int:
+elif method == int:
     print(obj.method_int())
+else:
+    print('Unsupported type!')
